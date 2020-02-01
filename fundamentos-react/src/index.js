@@ -3,24 +3,32 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
 import PrimeiroComponente from './componentes/PrimeiroComponente'
-
-import { Carro as Car, Moto as Mot } from './componentes/DoisComponentes'
-
+import Carro, { Moto as Mot } from './componentes/DoisComponentes'
 import MultiplosElementos , { teste as Teste} from './componentes/MultiplosElementos'
-
-import { Familia } from './componentes/Familia'
+import { FamiliaAugusto } from './componentes/FamiliaAugusto'
+import Familia from './componentes/Familia'
+import Membro from './componentes/Membro';
+import ComponenteComFuncao from "./componentes/ComponenteComFuncao";
+import ComunicacaoIndiretaPai from "./componentes/ComunicacaoIndiretaPai";
 
 ReactDOM.render(
     <>
         <App />
         <PrimeiroComponente valor="Bruno Augusto" isLegal={true}/>
-        <Car marca="BMW" modelo="X1" />
+        <Carro marca="BMW" modelo="X1" />
         <Mot marca="Honda" modelo="CBR - 500R" />
         <MultiplosElementos />
         <Teste></Teste>
-        <Familia />
+        {/* <FamiliaAugusto sobrenome="Augusto" /> */}
+        <FamiliaAugusto />
+        <Familia sobrenome="Vasconcellos Augusto">
+            <Membro nome="Brunoooooo" />
+            <Membro nome="Breno" sobrenome="Augusto"/>
+        </Familia>
+        <ComponenteComFuncao />
+        <ComunicacaoIndiretaPai />
+        
     </>
 , document.getElementById('root'));
 

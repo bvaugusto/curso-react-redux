@@ -28,7 +28,7 @@ import React from 'react'
 
 //Ex: 6
 export default (props) => 
-    <div>
+    <>
         <h1>Primeiro Componente!!!</h1>
         <h2>{props.valor}</h2>
         <h3>IsLegal? {props.isLegal ? 'Sim' : 'Não'}</h3>
@@ -36,4 +36,4 @@ export default (props) =>
         <p>{Math.pow(2,8)}</p>
         <p>{Math.random()}</p>
         <p>{4**2}</p>
-    </div>
+    </>

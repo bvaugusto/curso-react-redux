@@ -1,14 +1,11 @@
-import React from 'react'
-// import Membro from './Membro'
-// Ou
-import { Membro } from './Membro'
+import React from "react";
+import { filhosCompProps } from "../utils/utils";
 
-const Familia = props => 
+export default props => 
     <>
-        <Membro nome="Nome 1" sobrenome="Sobrenome 1" />
-        <Membro nome="Nome 2" sobrenome="Sobrenome 2" />
-        <Membro nome="Nome 3" sobrenome="Sobrenome 3" />
-        <Membro nome="Nome 4" sobrenome="Sobrenome 4" />
+        <h1>Família</h1>
+        {filhosCompProps(props)}
+        {/* {React.cloneElement(props.children, { ...props })} */}
+        {/* {React.cloneElement(props.children, { sobrenome: props.sobrenome })} */}
+        {/* {props.children} */}
     </>
-
-    export { Familia }
