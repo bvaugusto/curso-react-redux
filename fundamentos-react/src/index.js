@@ -11,6 +11,9 @@ import Familia from './componentes/Familia'
 import Membro from './componentes/Membro';
 import ComponenteComFuncao from "./componentes/ComponenteComFuncao";
 import ComunicacaoIndiretaPai from "./componentes/ComunicacaoIndiretaPai";
+import ComponenteClasse from "./componentes/ComponenteClasse";
+import Contador from "./componentes/Contador";
+import Hooks from "./componentes/Hooks";
 
 ReactDOM.render(
     <>
@@ -28,6 +31,9 @@ ReactDOM.render(
         </Familia>
         <ComponenteComFuncao />
         <ComunicacaoIndiretaPai />
+        <ComponenteClasse valor="Olá Mundo"/>
+        <Contador numero={0} />
+        <Hooks />
         
     </>
 , document.getElementById('root'));
