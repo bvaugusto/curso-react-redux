@@ -1,9 +1,14 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Bruno Augusto",
-            "email": "bvaugusto@gmail.com"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "Bruno Augusto",
+      "email": "bvaugusto@gmail.com"
+    },
+    {
+      "name": "Breno Augusto",
+      "email": "breno@gmail.com",
+      "id": 2
+    }
+  ]
 }

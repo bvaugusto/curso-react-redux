@@ -6,6 +6,6 @@ export default props =>
     <>
         <Header {...props} />
         <main className="content">
-            Conteúdo
+            Conteúdo main
         </main>
     </>
