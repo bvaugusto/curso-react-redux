@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const links = [
-    { 'link': '#/', 'icon': 'home', 'name': 'Início' },
-    { 'link': '#/users', 'icon': 'home', 'name': 'Usuários' },
+    { 'link': '/', 'icon': 'home', 'name': 'Início' },
+    { 'link': '/users', 'icon': 'home', 'name': 'Usuários' },
 ];
 
 export default props => {
@@ -12,7 +13,7 @@ export default props => {
             {links.map((option, index) => {
                 let icon = `fa fa-${option.icon}`;
                 return (
-                    <a href={option.link}> <i className={icon}></i> {option.name} </a>
+                    <Link to={option.link} key={index}> <i className={icon}></i> {option.name} </Link>
                 )
             })}
         </>
